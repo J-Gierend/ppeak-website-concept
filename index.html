@@ -9,18 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-primary: #0a1628;
-            --bg-secondary: #1a1a2e;
-            --bg-card: #12203a;
-            --accent: #d4af37;
-            --accent-glow: rgba(212, 175, 55, 0.3);
-            --text-primary: #f5f0e6;
-            --text-secondary: #a0a0a0;
-            --text-muted: #6a6a7a;
-            --border: rgba(212, 175, 55, 0.2);
-            --gaming-cyan: #00fff7;
-            --gaming-magenta: #ff00ff;
-            --gaming-amber: #ffaa00;
+            /* Classical - Muted/Pastel tones */
+            --bg-primary: #1a2a3a;
+            --bg-secondary: #2a3a4a;
+            --bg-card: #223344;
+            --accent: #c9a85c;
+            --accent-glow: rgba(201, 168, 92, 0.25);
+            --text-primary: #f8f4ef;
+            --text-secondary: #b8a8a0;
+            --text-muted: #8a8090;
+            --border: rgba(201, 168, 92, 0.2);
+            /* Gaming - Muted (not fully neon) */
+            --gaming-cyan: #70d4d0;
+            --gaming-magenta: #c580c5;
+            --gaming-amber: #d4a050;
         }
 
         * {
@@ -309,13 +311,13 @@
         }
 
         .aesthetic-card.classical {
-            background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 100%);
-            border: 1px solid rgba(212, 175, 55, 0.3);
+            background: linear-gradient(135deg, #1a2a3a 0%, #2a3a4a 100%);
+            border: 1px solid rgba(201, 168, 92, 0.3);
         }
 
         .aesthetic-card.gaming {
-            background: linear-gradient(135deg, #0f0f0f 0%, #1a0a2e 100%);
-            border: 1px solid rgba(0, 255, 247, 0.3);
+            background: linear-gradient(135deg, #181820 0%, #252035 100%);
+            border: 1px solid rgba(112, 212, 208, 0.3);
         }
 
         .aesthetic-card h4 {
@@ -328,7 +330,7 @@
         }
 
         .aesthetic-card.gaming h4 {
-            color: var(--gaming-cyan);
+            color: #70d4d0;
             font-family: 'Inter', sans-serif;
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -793,10 +795,10 @@
 
         <div class="card">
             <h3>Dual Worlds Concept</h3>
-            <p>Your music spans two distinct worlds - the elegance of classical/concert composition and the energy of video game and TTRPG soundtracks. The website will <strong>visually transform</strong> as visitors navigate between these sections, giving each world its own unique atmosphere while maintaining a cohesive experience.</p>
+            <p>Your music spans two distinct worlds - the elegance of classical/concert composition and the creativity of video game soundtracks. The website will <strong>visually transform</strong> as visitors navigate between these sections, with the two worlds kept <strong>relatively separate</strong> while maintaining a cohesive experience.</p>
             <ul>
-                <li><strong>Classical sections:</strong> Elegant, sophisticated, warm gold accents on deep navy</li>
-                <li><strong>Game music sections:</strong> Retro-inspired, neon colors, pixel accents, synthwave vibes</li>
+                <li><strong>Classical sections:</strong> Elegant, sophisticated, soft gold accents on muted navy - <em>pastel tones</em></li>
+                <li><strong>Game music sections:</strong> Gaming-inspired but <em>muted</em> - supports both electronic AND orchestral VGM</li>
                 <li><strong>Smooth transitions:</strong> The aesthetic morphs seamlessly as visitors switch sections</li>
             </ul>
         </div>
@@ -825,7 +827,7 @@
             <div class="bio-content">
                 <h3>Preston Peak</h3>
                 <p class="bio-tagline">Composer & Pianist | Houston, TX</p>
-                <p>Post-classical composer passionate about music's origins, innovations, and storytelling. Originally studying Biomedical Engineering at Texas A&M, your love for composition led you to create music for solo piano, chamber ensembles, video games, and TTRPGs.</p>
+                <p>Post-classical composer passionate about music's origins, innovations, and storytelling. Originally studying Biomedical Engineering at Texas A&M, your love for composition led you to create music for solo piano, chamber ensembles, and video games.</p>
 
                 <div class="bio-details">
                     <span class="bio-tag">Born 1998</span>
@@ -843,12 +845,14 @@
         </div>
 
         <div class="card mt-2">
-            <h3>Achievements to Highlight</h3>
+            <h3>Works to Highlight</h3>
             <ul>
+                <li><strong>Marriage Suite for String Quartet</strong> - <em>Featured work</em></li>
                 <li><strong>Sonata No. 1 (2023)</strong> - Semi-finalist at NYC Contemporary Music Symposium 2023</li>
                 <li><strong>Suite for Piano No. 1 - Songs for Winter</strong> (2023)</li>
-                <li><strong>Game Music Packs</strong> - Multiple releases on itch.io with hundreds of minutes of original music</li>
+                <li><strong>Video Game Music Packs</strong> - Multiple releases on itch.io</li>
             </ul>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);"><em>Note: No separate awards/honors section for now - Preston will add this later when ready.</em></p>
         </div>
 
         <div class="card">
@@ -886,8 +890,8 @@
                 <p>Showcase of concert and piano compositions. Each work displayed with title, year, duration, and embedded player. Elegant aesthetic.</p>
             </div>
             <div class="page-card">
-                <h4><span class="icon">4</span> Game Music</h4>
-                <p>Full aesthetic transformation to retro/pixel style. Features your itch.io packs with preview players, track counts, and direct purchase links.</p>
+                <h4><span class="icon">4</span> Video Game Music</h4>
+                <p>Muted gaming aesthetic (not fully neon). Features your itch.io packs with preview players - supports both electronic AND orchestral VGM styles.</p>
             </div>
             <div class="page-card">
                 <h4><span class="icon">5</span> Listen</h4>
@@ -918,37 +922,38 @@
                 <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Home, About, Classical Works, Listen, Contact</p>
 
                 <div class="color-palette">
-                    <div class="color-swatch" style="background: #0a1628;" title="Deep Navy"></div>
-                    <div class="color-swatch" style="background: #1a1a2e;" title="Charcoal"></div>
-                    <div class="color-swatch" style="background: #d4af37;" title="Warm Gold"></div>
-                    <div class="color-swatch" style="background: #f5f0e6;" title="Ivory"></div>
+                    <div class="color-swatch" style="background: #1a2a3a;" title="Muted Navy"></div>
+                    <div class="color-swatch" style="background: #2a3a4a;" title="Soft Slate"></div>
+                    <div class="color-swatch" style="background: #c9a85c;" title="Soft Gold"></div>
+                    <div class="color-swatch" style="background: #f8f4ef;" title="Warm Cream"></div>
+                    <div class="color-swatch" style="background: #b8a8a0;" title="Dusty Rose"></div>
                 </div>
 
                 <ul class="aesthetic-features">
                     <li>Playfair Display serif headings</li>
                     <li>Slow, elegant fade animations</li>
-                    <li>Floating particle effects (musical notes)</li>
+                    <li><strong>Muted/pastel tones</strong> throughout</li>
                     <li>Sophisticated, contemplative mood</li>
                 </ul>
             </div>
 
             <div class="aesthetic-card gaming">
                 <h4>GAMING AESTHETIC</h4>
-                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Game Music section</p>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Video Game Music section</p>
 
                 <div class="color-palette">
-                    <div class="color-swatch" style="background: #0f0f0f;" title="Deep Black"></div>
-                    <div class="color-swatch" style="background: #1a0a2e;" title="Dark Purple"></div>
-                    <div class="color-swatch" style="background: #00fff7;" title="Neon Cyan"></div>
-                    <div class="color-swatch" style="background: #ff00ff;" title="Neon Magenta"></div>
-                    <div class="color-swatch" style="background: #ffaa00;" title="Warm Amber"></div>
+                    <div class="color-swatch" style="background: #181820;" title="Deep Charcoal"></div>
+                    <div class="color-swatch" style="background: #252035;" title="Muted Indigo"></div>
+                    <div class="color-swatch" style="background: #70d4d0;" title="Soft Cyan"></div>
+                    <div class="color-swatch" style="background: #c580c5;" title="Soft Magenta"></div>
+                    <div class="color-swatch" style="background: #d4a050;" title="Soft Amber"></div>
                 </div>
 
                 <ul class="aesthetic-features">
-                    <li>Pixel font headers + clean body text</li>
-                    <li>Subtle CRT scanline effects</li>
-                    <li>Neon glow on interactive elements</li>
-                    <li>Retro synthwave, energetic mood</li>
+                    <li>Clean sans-serif or subtle pixel font</li>
+                    <li>Subtle grid patterns (optional)</li>
+                    <li><strong>Muted, not fully neon</strong></li>
+                    <li>Supports electronic AND orchestral VGM</li>
                 </ul>
             </div>
         </div>
@@ -1111,16 +1116,28 @@
 
     <!-- CTA -->
     <section class="cta-section">
-        <h2>What Do You Think?</h2>
-        <p>This is just the starting point. Let me know what resonates, what you'd change, and any ideas you have!</p>
+        <h2>Updated Based on Your Feedback!</h2>
+        <p>Thanks for the detailed response, Preston! Here's what changed based on your input:</p>
 
         <div class="cta-note">
-            <strong>Questions to consider:</strong><br><br>
-            - Does the "dual worlds" concept fit how you see your music?<br>
-            - Are there any pages or features you'd add or remove?<br>
-            - Do the color schemes feel right for each aesthetic?<br>
-            - Any specific content or works you want highlighted?<br>
-            - Do you have photos we can use for the About section?
+            <strong>Changes Made:</strong><br><br>
+            ✓ Dual worlds will be kept <strong>relatively separate</strong><br>
+            ✓ Removed TTRPG music from site scope<br>
+            ✓ Removed honors/awards section (add later when ready)<br>
+            ✓ Classical colors now <strong>more muted/pastel</strong><br>
+            ✓ Gaming colors <strong>less neon</strong> - supports orchestral VGM too<br>
+            ✓ Added <strong>Marriage Suite for String Quartet</strong> as featured work<br>
+            ✓ Waiting for your photos for the About section!
+        </div>
+
+        <div class="cta-note" style="margin-top: 1.5rem;">
+            <strong>About Editing the Site Yourself:</strong><br><br>
+            You mentioned wanting to update the site when you finish new projects. Options:<br><br>
+            1. <strong>Simple HTML/CSS</strong> - Direct file editing, easy to understand<br>
+            2. <strong>Vue with clear structure</strong> - Data in separate JSON files<br>
+            3. <strong>Markdown-based</strong> - Write content in .md files<br>
+            4. <strong>CMS (future)</strong> - Admin panel for content updates<br><br>
+            <em>We can discuss which approach works best for you!</em>
         </div>
     </section>
 

@@ -3,7 +3,7 @@
 ## Overview & Goals
 
 ### Project Summary
-A modern, animated portfolio website for **Preston Peak**, a post-classical composer who creates both concert music and video game/TTRPG soundtracks. The site features a dramatic visual transformation between classical and gaming aesthetics, reflecting his dual artistic identity.
+A modern, animated portfolio website for **Preston Peak**, a post-classical composer who creates both concert music and video game soundtracks. The site features a dramatic visual transformation between classical and gaming aesthetics, reflecting his dual artistic identity. The two worlds will remain **relatively separate** on the site.
 
 ### Success Criteria
 - Visitors can easily discover and listen to Preston's music across all genres
@@ -17,7 +17,6 @@ A modern, animated portfolio website for **Preston Peak**, a post-classical comp
 1. **Industry Professionals** - Film/game studios seeking composers
 2. **Indie Developers** - Game devs looking for music packs
 3. **Classical Music Enthusiasts** - Fans of contemporary piano works
-4. **TTRPG Community** - D&D players seeking ambient music
 
 ### Scope
 **In Scope:**
@@ -33,9 +32,17 @@ A modern, animated portfolio website for **Preston Peak**, a post-classical comp
 
 **Out of Scope (Future):**
 - Built-in e-commerce/payment processing
-- CMS/admin panel for content updates
 - User accounts/authentication
 - Newsletter system (can be mocked)
+
+### Editability Requirement
+**Preston wants to personally update the site** when he finishes new projects. He has basic web design experience and is open to a simpler design if it makes editing easier.
+
+**Options:**
+1. **Simple HTML/CSS approach** - Direct file editing, easy to understand
+2. **Vue with clear structure** - Organized components, data in separate files (JSON/YAML)
+3. **Markdown-based content** - Write content in .md files, site generates pages
+4. **Headless CMS (Future)** - Admin panel for content updates
 
 ---
 
@@ -58,9 +65,12 @@ All content must come from verified sources. **Never fabricate information.**
 ### Classical Works (Verified)
 | Work | Year | Duration | Instrumentation | Notes |
 |------|------|----------|-----------------|-------|
+| **Marriage Suite for String Quartet** | TBD | TBD | String Quartet | **Featured work** - highlight on site |
 | Sonata No. 1 | 2023 | 6-7 min | Solo Piano | Semi-finalist, NYC Contemporary Music Symposium 2023; romantic era dedication |
 | Suite for Piano No. 1 - Songs for Winter | 2023 | TBD | Solo Piano | - |
 | Overcast Skies | TBD | TBD | TBD | First shared composition that sparked his passion |
+
+**Note:** Preston has many projects getting ready to finish soon. Site will need easy updating for new works.
 
 ### Game Music Packs (Verified from itch.io)
 | Pack | Tracks | Duration | Style | Price |
@@ -202,30 +212,32 @@ The site features two distinct visual identities that transform based on the cur
 #### Classical Aesthetic (Home, About, Classical Works, Listen, Contact)
 | Element | Value |
 |---------|-------|
-| Primary BG | Deep Navy `#0a1628` |
-| Secondary BG | Charcoal `#1a1a2e` |
-| Accent | Warm Gold `#d4af37` |
-| Text Primary | Ivory `#f5f0e6` |
-| Text Secondary | Silver `#a0a0a0` |
+| Primary BG | Muted Navy `#1a2a3a` |
+| Secondary BG | Soft Slate `#2a3a4a` |
+| Accent | Soft Gold `#c9a85c` |
+| Text Primary | Warm Cream `#f8f4ef` |
+| Text Secondary | Dusty Rose `#b8a8a0` |
 | Font Headings | Playfair Display (serif) |
 | Font Body | Inter (sans-serif) |
 | Animations | Slow fades (0.6s), gentle parallax, floating particles |
-| Mood | Sophisticated, elegant, contemplative |
+| Mood | Sophisticated, elegant, contemplative, **muted/pastel tones** |
 
 #### Gaming Aesthetic (Game Music section)
 | Element | Value |
 |---------|-------|
-| Primary BG | Deep Black `#0f0f0f` |
-| Secondary BG | Dark Purple `#1a0a2e` |
-| Accent Primary | Neon Cyan `#00fff7` |
-| Accent Secondary | Neon Magenta `#ff00ff` |
-| Accent Tertiary | Warm Amber `#ffaa00` |
-| Text Primary | Pure White `#ffffff` |
-| Font Headings | Press Start 2P or similar pixel font (headings only) |
+| Primary BG | Deep Charcoal `#181820` |
+| Secondary BG | Muted Indigo `#252035` |
+| Accent Primary | Soft Cyan `#70d4d0` |
+| Accent Secondary | Soft Magenta `#c580c5` |
+| Accent Tertiary | Soft Amber `#d4a050` |
+| Text Primary | Off-White `#f0f0f5` |
+| Font Headings | Clean sans-serif or subtle pixel font (optional) |
 | Font Body | Inter (keeps readability) |
-| Effects | CRT scanlines (subtle), glow effects, grid patterns |
-| Animations | Glitch transitions, pixel reveals |
-| Mood | Retro, energetic, nostalgic |
+| Effects | Subtle grid patterns (optional), soft glow effects |
+| Animations | Smooth transitions, gentle reveals |
+| Mood | Gaming-inspired but **muted**, supports both electronic and orchestral VGM |
+
+**Note:** Preston creates both electronic/chiptune AND non-electronic (orchestral/acoustic) video game music. The gaming aesthetic should not lean fully into neon-retro - keep it more subdued to accommodate all styles.
 
 ### Light Mode Variants
 Both aesthetics have light mode alternatives:
@@ -288,11 +300,12 @@ Both aesthetics have light mode alternatives:
 **Purpose:** Personal connection, bio, achievements
 
 **Content Sections:**
-1. **Hero** - Portrait (from YouTube) + tagline
+1. **Hero** - Portrait (Preston will provide photos) + tagline
 2. **Bio** - Full biography (verified content only)
-3. **Achievement Highlight** - NYC Contemporary Music Symposium 2023
-4. **Philosophy** - "No AI" commitment badge
-5. **Personal** - Mentions video games, D&D, wife Hailey
+3. **Philosophy** - "No AI" commitment badge
+4. **Personal** - Mentions video games, D&D, wife Hailey
+
+**Note:** No separate awards/honors section for now - Preston prefers to wait until he has more recognition to highlight.
 
 **Special Elements:**
 - "No AI Used" badge/seal prominently displayed
@@ -320,15 +333,15 @@ Both aesthetics have light mode alternatives:
 
 ### 4. Game Music Page (`/games`)
 
-**Purpose:** Showcase video game and TTRPG music packs
+**Purpose:** Showcase video game music packs (no TTRPG)
 
-**Aesthetic:** Full transformation to gaming/retro style
+**Aesthetic:** Gaming-inspired but muted (supports electronic AND orchestral VGM)
 
 **Layout:**
 ```
 ┌─────────────────────────────────────┐
-│  HERO (pixel art background)        │
-│  "Game & TTRPG Music"               │
+│  HERO (subtle gaming background)    │
+│  "Video Game Music"                 │
 ├─────────────────────────────────────┤
 │  FEATURED PACK (remnants)           │
 │  Large card with preview player     │
